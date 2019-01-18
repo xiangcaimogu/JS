@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+<!--<script>
+    function buy(what){
+		console.log("取饭盒");
+		console.log("到食堂");
+		console.log("找窗口打饭");
+		what="香碰碰的"+what;
+		console.log("回宿舍");
+		return what;
+		}
+		var jy1=buy("饺子");
+		console.log(jy1);
+		var jy2=buy("盖饭");
+		console.log(jy2);
+</script>-->
+<body>
+<script>
+    function buy(what,card){
+		card-=3;
+		console.log("余额:"+card);
+		what="香喷喷的"+what;
+		return what;
+		}
+	var card=10;
+	console.log(buy("饺子",card));
+	console.log("余额:"+card);
+</script>
+<script>
+		 var a=
+		 parseInt(prompt("请输入第一个加数"));
+		 var b=
+		 parseInt(prompt("请输入第二个加数"));
+     function add(a,b){
+		 return a+b;
+		 }
+		 console.log(add(a,b));
+</script>
+<script>
+   var a=3;
+   var b=5;
+   var c=6;
+   function getMax(a,b,c){
+	   var max=a;
+	   max>b?a:b;
+	   max=max>c?max:c;
+	   return max
+	   }
+    console.log("最大"+getMax(a,b,c))
+	/*语法：声明
+     function 方法名（参数列表）{
+     方法体：步骤清单
+     reture 返回值； 
+     }
+调用：方法名（参数值列表）;
+参数：方法内独有的变量 接受传入数据，在方法内处理。
+如何声明方法参数：不用var
+参数什么时候创建？只有方法被调用时才自动创建。
+返回值：方法执行完成后，由方法返回的一个数据。
+return：本意退出方法！
+        退出同时，可返回数据！
+可以在任何需要的地方，调用方法执行；
+带返回值的方法，使用时，等效于直接使用返回值
+
+作用域：一个变量的可用的范围！
+全局作用域：直接放在全局作用域中的变量，叫全局作用域。
+window对象：是整个全局对象
+局部（函数）作用域：声明在方法内部的变量或者是方法的参数的变量都叫局部变量。
+函数方法内的参数优先选择自己的作用域内的值。这个值在函数作用域内要有声明，如果没有声明就向外找值。
+函数作用域内的值，函数参数可以用，但是外面的参数不能直接用函数内部的参数值，只有外部值传递到函数内部。
+函数作用域在调用方法时创建，方法执行完后立刻销毁（包括方法的参数）！
+   只剩return返回方法的值，这个值只要调用方法的时候才用到；
+   函数作用域外的参数值只有复制给函数作用域内参数，函数作用域内的参数改变了但不改变外部的参数值；这就是值传递。
+值传递：将一个变量的值赋值给另一个变量，其实将原变量中的值，复制一份给新的变量。
+方法的参数作用：1.是提供方法必须要的参数
+               2.接受外部传入数据，在方法内处理
+方法返回值：根据方法调用者的需要！
+			   
+*/
+
+</script>
+</body>
+</html>

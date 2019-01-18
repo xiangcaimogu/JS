@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<script>
+//var str=arr.join("分隔符")：将数组转为字符串。可自定义分隔符！
+//用法：将字符拼接为单词或句子
+var chars=["h","e","l","l","o"];
+var str=chars.join("");//str新的数组
+document.write(str)
+</script>
+<script>
+//arr.concat(元素值，[数组，...]):
+//var arro=arr1.concat(arr2,32),将arr2拼接到arr1里，产生新的arr0，*不能改变原数组，只能返回新数组对象*
+</script>
+<script>
+//var arr=1,  2,  3,  4,5,6,7
+//       [0],[1],[2].......[6]
+var subArr=arr.slice(2,4+1)/*截取数组下标start开始，到end位置的元素，生成新数组对象，*                             含头不含尾*，我要取下标为2到4之间，只能写slice(2,5)*/
+//取倒数第二个的元素值的时候，可以直接用复数(-4,-2+1),倒数第四个到倒数第二个
+</script>
+<script>
+//arr.splice:删除！插入！替换！直接在原数组改变，但也可以生成新数组，
+//var remove=arr.splice(2,2)，返回删除的元素
+//删除元素：arr.splice(start,count);从第几个开始，删除个数
+//替换元素：arr.splice(start,count,值1,值2,值3);可以删除2个，替换3个
+//插入元素：arr.splice(start,0,值1,值2,值3....)从start开始删除0个，添加元素
+</script>
+<script>
+arr.reverse()//:颠倒所有数组元素
+arr.sort()//:默认升序排列
+</script>
+</body>
+</html>

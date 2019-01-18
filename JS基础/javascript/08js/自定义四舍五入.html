@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<script>
+function roun(num,d){
+	num*=Math.pow(10,d);
+	num=Math.round(num.toFixed(2))//出现舍入误差的时候用toFixed
+	num/=Math.pow(10,d);
+	return num;
+	}
+	console.log(roun(23.4566,3))
+	console.log(roun(555.555,2))
+</script>
+<script>
+var chars=[];
+for(var c=48;c<=57;c++){
+	chars.push(String.fromCharCode(c));
+	}
+for(var c=65;c<=90;c++){
+	chars.push(String.fromCharCode(c));
+	}
+for(var c=97;c<=122;c++){
+	chars.push(String.fromCharCode(c));
+	}
+	console.log(chars);
+function getCode(){
+	var code=[];
+	while(code.length<4){
+		var i=parseInt(Math.random()*62);
+		code.push(chars[i]);
+		}
+  return code.join("");
+	}
+var code=getCode();
+var input="";
+while((input=prompt("输入验证码"+code)).toUpperCase()
+!=code.toUpperCase()){
+	
+	alert("验证码错误");
+	
+	code=getCode()
+	}
+	alert("验证通过")
+	
+var days=new Date("2012/06/05");
+var enddays=new Date(days.getTime());
+var year=enddays.getFullYear();
+year+=3;
+enddays.setFullYear(year);
+console.log("到期时间"+enddays.toLocaleDateString())
+</script>
+</body>
+</html>

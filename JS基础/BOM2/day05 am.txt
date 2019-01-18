@@ -1,0 +1,56 @@
+正课: 
+1. DOM常用对象: 
+  history
+  location
+  navigator
+*****event
+
+1. history: 
+ 什么是: 保存当前窗口打开后，成功访问过的url的历史记录栈。
+ 特点: 内容不对开发人员开放，更无法修改
+ 如何使用: 前进，后退，刷新
+   前进: history.go(1)
+   后退: history.go(-1)
+   刷新: history.go(0)
+
+2. location:
+ 什么是: 保存当前窗口正在打开的url的对象
+ 何时使用: 
+   1. 跳转: 只能实现在当前窗口打开
+     location.href="url";
+     location.assign("url");
+     location="url"
+   2. 重新加载当前页面:
+     location.reload(false/true);
+      参数: force 表示是否强制从服务器硬盘获取最新文档。
+   3. 在当前页面打开，禁止后退: 
+     location.replace("url");
+      打开新url，并用新url替换history中当前旧url，实现禁止后退
+
+  属性: http://tmooc.cn:8080/orders/orderDetails/index.html?username=zhangdong&kw=大鱼
+          #top
+   location.protocol: 协议
+           .host: 主机名+端口号
+           .hostname: 主机名
+           .port: 端口
+           .pathname: 相对路径
+           .search: ?及其之后的查询字符串
+           .hash: #锚点名
+
+3. navigator:
+  包含了所有浏览器的配置信息: 没有标准
+  1. 判断cookie是否启用: 
+    navigator.cookieEnabled
+  2. 判断是否安装了指定插件(plugin)
+    navigator.plugins集合
+  3. 判断浏览器名称和版本号(只支持5大浏览器)
+    navigator.userAgent
+
+
+
+
+
+
+
+
+

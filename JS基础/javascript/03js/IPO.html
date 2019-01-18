@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<!--1.请用户输入：单价，数量，收款金额，保存在变量中
+    2.计算：应收金额=单价*数量
+            如果消费满500打八折
+           找零=收款金额-应收金额
+    3.输出：应收金额，找零   -->
+<script>
+    var price=parseFloat(prompt("请输入单价"));
+	var count=parseFloat(prompt("请输入数量"));
+	var money=parseFloat(prompt("请输入收款金额"));
+	var total=price*count;
+	 /*total=total>=500?total*0.8:
+	                      total;*/
+		if(total>=500){
+			total*=0.8;
+			}
+		if(money>=total){
+			var change=money-total;
+			document.write("找零"+change.toFixed(2));
+			}else{
+		    var change=total-money;
+			document.write("还少"+change.toFixed(2));
+			}					  
+	
+	document.write("应收金额"+total.toFixed(2));
+	
+</script>
+<script>
+   var score=parseInt(prompt("请输入分数"));
+   if(score>=90){
+	   alert("A");
+	   }else if(score>=80){
+	    alert("B");
+		}else if(score>=60){
+		alert("C");
+		}else{alert("D")
+		}
+		//分支结构中的条件，可以不是逻辑表达式！如果不是，JS会自动转换为Boolean类型：
+		//0,null,undefined，NaN,“”，0.0都转为false
+		//其余，都转为true！
+</script>
+</body>
+</html>

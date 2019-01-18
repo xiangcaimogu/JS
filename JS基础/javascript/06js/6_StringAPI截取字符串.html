@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+	<head>
+		<title>标题</title>
+		<meta charset="utf-8">
+		<script>
+/*
+			var code="cE8T";	
+			//请用户输入验证码保存在input中
+			while(prompt("输入验证码"+code)
+						.toUpperCase()
+						!=
+						code.toUpperCase()){
+				//就提示验证码错误
+				alert("验证码错误");
+			}
+			document.write("<h1>验证通过</h1>");
+*/
+		var str="今晚308,w84u";
+//声明变量:chs,eng,num,oth都初始化为0
+var chs=0,eng=0,num=0,oth=0;
+//遍历str中每个字符
+for(var i=0;i<str.length;i++){
+	//如果当前字符>="0"且<="9"，就num+1
+	str[i]>="0"&&str[i]<="9"?num+=1:
+	//否则，如果当前字符>="A"且<="Z"或>="a"且<="z"，就eng+1
+	str[i]>="A"&&str[i]<="Z"
+	||str[i]>="a"&&str[i]<="z"?eng+=1:
+	//否则，如果当前字符>="一"且<="\u9fa5"，就chs+1
+	str[i]>="\u4e00"&&str[i]<="\u9fa5"?
+		chs+=1:oth+=1;
+	//否则，就oth+1
+}//(循环结束)
+		console.log(
+			"数字:"+num,"字母:"+eng,
+			"汉字"+chs,"其他:"+oth
+		);
+		</script>
+        <script>
+        var str="you can you up";
+		for(var i=0,arr=[];i<str.length;i++){
+			if(arr[str[i]]!=undefined){//arr[str[i]]这个玩意的意思就是arr里有没有str[i]这个元素。
+				arr[str[i]]++
+				}else{
+					arr[str[i]]=1
+					}
+			}console.log(arr)
+        </script>
+	</head>
+	<body>
+		
+	</body>
+</html>

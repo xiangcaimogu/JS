@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>第一个JS网页</title>
+ </head>
+ <body>
+  <script>
+     function fun(){
+	 alert("炖菜");
+	 } 
+  </script>
+ <script src="index.js"></script>
+
+  <button onclick="cook()">alert</button>
+  <button onclick="cook()">alert</button>
+  <button onclick="fun()">alert0</button>
+
+ </body>
+</html>

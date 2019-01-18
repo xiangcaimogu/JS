@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>无标题文档</title>
+</head>
+
+<body>
+<script>
+    //全局变量和局部变量
+    var n = 0;
+    function getNum() {//这边没有参数，里面也没有var，所以没有局部变量,按照作用域链会到全局去找变量n;
+        return ++n;//return ++n直接改变的全局变量，就相当于var n=n+1;每调用一次就附一次值
+    }
+    console.log(getNum());//1
+    console.log(getNum());//2
+    console.log(getNum());//3
+    console.log(n)
+
+    function get() {
+        var n = 0;//局部变量每次函数调用结束，直接释放，下次调用重新开始
+        return ++n;
+    }
+
+    console.log(get());//1
+    console.log(get());//1
+    console.log(get());//1
+
+    function fun(m) {//参数m是局部变量
+        --m;
+        console.log(m)
+    }
+
+    fun(n);
+    console.log(n);
+
+    //闭包
+    /*1.函数嵌套
+    2.内层函数使用外层函数的变量
+    3.内层函数被返回到外部，外部调用*/
+    function fun() {
+        var n = 0;
+        return function () {//return返回的是一个函数，把函数的地址给了gen.
+            return ++n;
+        }
+    }
+
+    var gen = fun();//就相当于gen=function(){teturn ++n},这一步调用了fun(),读取了return返回的函数，
+    //但是没有调用return函数，下一步加上了(),才表示调用了return返回到gen的函数.
+    console.log(gen())//gen是一个函数要加上"()",表示调用函数
+                      //执行过一次gen(),n=1，被保留下来，var n=0；是一直被内层函数牵引着，不会被释放
+    console.log(gen())//2
+    console.log(gen())//3
+
+</script>
+</body>
+</html>

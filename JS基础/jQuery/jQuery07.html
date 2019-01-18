@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+    <style>
+        table {
+            width: 100%;
+            text-align: center;
+            border-collapse: collapse;
+            border-spacing: 0;
+            border-top: 1px solid #939598;
+            border-left: 1px solid #939598;
+
+        }
+
+        td, th {
+            word-break: break-all;
+            word-wrap: break-word;
+            border-right: 1px solid #939598;
+            border-bottom: 1px solid #939598;
+            font: 500 14px Arial
+        }
+    </style>
+</head>
+<body>
+<input type="button" id="add" value="新增">
+<table>
+    <thead>
+    <tr>
+        <th>姓名</th>
+        <th>工资</th>
+        <th>入职时间</th>
+        <th>操作</th>
+    </tr>
+    <tbody>
+    <tr>
+        <td>tom</td>
+        <td>3000</td>
+        <td>2100-8-09</td>
+        <td><a href="#">删除</a></td>
+    </tr>
+    <tr>
+        <td>tom</td>
+        <td>3000</td>
+        <td>2100-8-09</td>
+        <td><a href="#">删除</a></td>
+    </tr>
+    <tr>
+        <td>tom</td>
+        <td>3000</td>
+        <td>2100-8-09</td>
+        <td><a href="#">删除</a></td>
+    </tr>
+    <tr>
+        <td>tom</td>
+        <td>3000</td>
+        <td>2100-8-09</td>
+        <td><a href="#">删除</a></td>
+    </tr>
+    </tbody>
+    </thead>
+</table>
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+    $("#add").click(function () {
+        $("tbody").append("<tr><td>tom</td><td>3000</td><td>2100-8-09</td><td><a href='#'>删除</a></td></tr>")
+        $("a").click(Move)
+    })
+    // $("a").click(function (event) {
+    //     var target=event.target;
+    //     $(target).parent().parent().remove()
+    // })
+
+    function Move() {
+        var target = this;
+        var tr = $(target).parent().parent();
+        $(tr).remove()
+    }
+    $("a").click(Move);//调用函数直接放函数名
+</script>
+</body>
+</html>

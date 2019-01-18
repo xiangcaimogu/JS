@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<script>
+function cals(){
+	if(arguments.length==1){
+		return arguments[0]*arguments[0]
+	}else{
+		return arguments[0]+arguments[1]
+		}
+}
+console.log(cals(5));
+console.log(cals(6,5));	
+
+//重载
+//arguments:所有函数对象都有，专门接受调用时传入的参数值
+//arguments.length:参数的个数
+//arguments[i]:获得下标i位置的参数值
+</script>
+</body>
+</html>

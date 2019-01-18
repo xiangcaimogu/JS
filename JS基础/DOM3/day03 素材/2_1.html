@@ -1,0 +1,53 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>动态操作表格</title>
+<meta charset="utf-8" />
+<style>
+	table{width:500px; border-collapse:collapse;
+		text-align:center;
+	}
+	td,th{border:1px solid #ccc}
+	thead td{font-weight:bold;}
+</style>
+<script>
+	var data=[
+{"id":1001,"name":'可口可乐',"price":2.5,"count":3000},
+{"id":1003,"name":'百事可乐',"price":2.5,"count":5000},
+{"id":1011,"name":'非常可乐',"price":2.3,"count":1000}
+	];
+	
+</script>
+<script src="2_1.js"></script>
+</head>
+<body>
+	<div id="data"></div>
+</body>
+</html>
+<!--<script>
+window.onload=function(){
+	var tab=document.createElement("table");
+	var thead=tab.createTHead();
+	var tr=thead.insertRow();
+	console.log(data[0]);
+	for(var key in data[0]){
+		var th=document.createElement("th");
+		th.innerHTML=key;
+		tr.appendChild(th)
+		}
+	var th=document.createElement("th");
+	th.innerHTML="operate";
+	tr.appendChild(th);
+		
+	var tbody=document.createElement("tbody");
+		for(var i=0;i<data.length;i++){
+			var tr=document.createElement("tr");
+				for(var key in data[i]){
+					var td=tr.insertCell();
+					td.innerHTML=data[i][key];
+					}
+		var td=tr.insertCell();			
+			}	
+document.getElementById("data").appendChild(tab)
+}
+</script>-->

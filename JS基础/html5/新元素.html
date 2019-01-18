@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<fieldset>
+	<legend></legend>
+    <table>
+    	<tr>
+        	<td>
+            	<select>
+                	<option>请选择</option>
+                    <option>北京市</option>
+                    <option>天津市</option>
+                    <option>南京市</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+        	<td>
+            	<datalist id="data">
+                	<option>请选择</option>
+                    <option>北京市</option>
+                    <option>天津市</option>
+                    <option>南京市</option>
+                </datalist>
+                <input type="text" list="data">
+            </td>
+        </tr>
+        <tr>
+        	<td>
+            	<progress max="100" value="0" id="progess">
+            </td>
+        </tr>
+        <tr>
+        	<td>
+            	<meter low="10" high="80" min="0" max="100" value="0" id="meter">
+            </td>
+        </tr>
+    </table>
+    
+</fieldset> 
+<script>
+(function fn(){
+	var progess=document.getElementById("progess");
+	var ma=progess.max;
+	var va=progess.value;
+	if(va==ma){
+		clearTimeout(t)}
+	va++;
+	progess.value=va;
+	t=setTimeout(fn,100)
+	})()
+</script>
+<script>
+(function fn2(){
+	var meter=document.getElementById("meter");
+	var ma=progess.max;
+	var va=progess.value;
+	if(va==ma){
+		clearTimeout(t)};
+	va++;
+	meter.value=va;
+	t=setTimeout(fn2,100)	
+	}
+)()
+</script>
+</body>
+</html>

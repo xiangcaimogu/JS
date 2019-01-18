@@ -1,0 +1,41 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>事件处理</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="../3.css"/>
+		<script>
+			function fun(){
+				var  e=window.event||argument[0];
+				var target=e.srcElement||e.target;//获取事件目标，与事件相关联的对象，要获取事件相关的对象，就需要获取事件对象e
+				target.style.backgroundColor="yellow";
+				
+				alert(target.className);
+				target.style.backgroundColor=""
+				
+				if(e.stopPropargation){
+						e.stopPropargation()
+					}else{
+						e.cancelBubble=true;//当前绑定事件对象
+					}//取消冒泡
+				}
+				
+				window.onload=function(){
+					var divs=document.querySelectorAll("div")
+				    /*divs[1].onclick=fun;*/
+					
+					divs[0].addEventListener("click",fun,false);
+					divs[1].addEventListener("click",fun,false);
+					divs[2].addEventListener("click",fun,false)
+					}
+		</script>
+	</head>
+	<body>
+		<div class="d1">
+			<div class="d2">
+				<div class="d3">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

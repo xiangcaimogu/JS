@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<script>
+function Student(sname,age){
+	this.sname=sname;
+	this.age=age;
+	}
+Student.prototype.intrSelf=function(){
+	console.log("I'm"+this.sname+"I'm"+this.age);
+	}
+var Lilei=new Student("Li li",18);
+
+/*var father={car:"BMW"};
+Student.prototype=father;*/
+var hmm=new Student("Ham mei",19);
+document.write(Lilei)	
+</script>
+</body>
+</html>

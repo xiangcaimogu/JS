@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<script>
+/*数组API：
+   *栈：一端封闭，只能从一端进出的数组
+    何时使用栈？仅从一端进出数组时
+	 从数组末尾出入栈：其他元素的下标不受影响
+	  末尾 入栈：arr.push(新值)
+	  末尾 出栈：var last=arr.pop()
+	  从数组开头入栈：每次入栈一次，其余元素下标都要瞬移
+	  开头 入栈：arr.unshift(新值)
+	  开头 出栈：var first=arr.shift();
+	  
+	  队列，从一端进入，从另一端出去*/
+var bus=[]
+//上车
+for(var i=1;i<=5;i++){
+	bus.push("乘客"+i);
+	document.write(bus+"<br>");
+	}
+	
+	while(bus.length>0){
+		var customer=bus.pop();
+		document.write(customer+"下车"+"<br>");
+		document.write(bus+"<br>");
+		}
+		
+</script>
+<script>
+var n=prompt("请输入一个数字")
+var stack=[];
+while(n>0){
+	stack.unshift(n%2);
+	n=parseInt(n/2);
+	}
+	console.log(stack)
+</script>
+</body>
+</html>

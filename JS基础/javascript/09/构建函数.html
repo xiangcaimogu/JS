@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body><script>
+function Student(sname,age){
+	this.sname=sname;
+	this.age=age;
+	/*this.intrSelf=function(){
+		console.log("I'm "+this.sname+"I'm "+this.age);
+		}*/
+	}
+//构造函数的原型对象 添加intrSelf函数
+Student.prototype.intrSelf=function(){
+	  console.log("I'm "+this.sname+"I'm "+this.age)
+	}	
+var lilei=new Student("LI Lei",18);
+var hmm=new Student("Han Meimei",20);
+//判断hmm能不能用intrSelf
+console.log("intrSelf" in hmm);
+lilei.intrSelf();
+hmm.intrSelf();
+</script>
+</body>
+</html>

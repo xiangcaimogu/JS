@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<script>
+var html='<a href="#">smith</a><a href="#">eric</a><a href="#">jerry</a>';
+document.write(html+"<br>");
+//Step:掐头去尾，从12开始到-4结束
+html=html.slice(12,-4);
+//step2:安有规律的分隔符，分割每一个人名，得到人名数组
+var names=html.split('</a><a href="#">');
+console.log(names);
+//step3:对人名数组排序
+names.sort();
+console.log(names);
+//step4:怎么切割的，就怎么join回去，补上开头和结尾
+html='<a href="#">'+names.join('</a><a href="#">')+'</a>'
+document.write(html)
+</script>
+<script>
+var msg="Tom@补给兵@60%#Marry@医护兵@80%#john@特种兵@30%"
+//step1:按#切割msg，得到角色数组roles
+var roles=msg.split("#");
+//step2:遍历角色数组中每个角色字符串
+for(var i=0;i<roles.length;i++){
+	//在切割遍历三个出来的角色名称和生命值
+	var props=roles[i].split("@");
+	console.log(props[0]+" "+props[1]+"生命:"+props[2]);
+	
+	}
+</script>
+<script>
+var stmt="no zuo no die";
+var words=stmt.split(" ")//切割每个单词
+for(var i=0;i<words.length;i++){
+	words[i]=words[i][0].toUpperCase()+words[i].slice(1);
+	stmt=words.join(" ");
+	
+	}
+	console.log(stmt);
+</script>
+</body>
+</html>

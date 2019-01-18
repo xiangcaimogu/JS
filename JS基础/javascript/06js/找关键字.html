@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+
+<script>
+//查找关键字的位置var index=str.indexOf(kword,formi);
+//在str中从formi位置开始，找下一个“关键字”所在的位置。
+//如果找到返回关键字的第一个字符的下标位置
+//如果找不到就返回-1；
+var kword="我去";
+var str="那天我去了女神家里，我说：我去，你家真大";
+var index=-1;
+while((index=str.indexOf(kword,index+1))!=-1){//为什么index+1，应该是自动查找到第一个关键字的位置返回的值肯定不等于-1，然后在index+1位置继续找下一个关键字，循环最后返回的值是-1，
+	console.log("在位置"+index+"发现关键字")
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>事件处理</title>
+<meta charset="utf-8" />
+<script>
+  var params=(function(){
+    //获取location的search属性，保存在search中
+    var search=location.search;
+    var params={};//创建空对象params
+    if(search!=""){//如果search不是空字符串
+      //?username=zhangdong&pwd=123456
+      //search去开头?，按&切割为数组，forEach
+      search.slice(1).split("&").forEach(
+        function(val){
+        //将当前元素值按=切割，保存在arr中
+          var arr=val.split("=");
+        //向params中添加一个元素,属性名为arr[0],值为arr[1]
+          params[arr[0]]=arr[1];
+        }
+      );
+    }
+    return params;//返回params
+  })();
+  console.dir(params);
+  //params:{username:"zhangdong",pwd:"123456"}
+</script>
+</head>
+<body>
+ 	<form>
+		姓名:<input name="username"/>
+		密码:<input type="password" name="pwd"/>
+		<input type="submit"/>
+	</form>
+	<!--2. 实现不能后退的页面跳转-->
+	<button >go to tmooc</button>
+</body>
+</html>

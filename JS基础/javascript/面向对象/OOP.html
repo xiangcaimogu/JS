@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // JS数据类型
+
+    // 字符串，数字，布尔，数组，对象，null ，undefined；
+
+    // 字符串( var a='a')，数字，布尔(var a=ture/flase)，数组 var a=[1,2,3]，对象 var i={j:0,}，null 表示没有对象 空对象，undefined 没有赋值；
+
+    // 一切皆对象（原始类+对象）//原始包括 字符串，数字，布尔，null ，undefined    对象包括 数组和对象
+
+    // 创建对象
+
+    var obj = new Object(); //通过new关键字创建
+
+    obj.name = 'sonia';
+
+    obj.age = 26;
+
+    obj.todo = function(){
+
+    }
+
+    // 2，对象字面量
+
+    // 1)简单的字面量
+
+    var obj2 = {};//隐式的new
+
+    obj2.name = 'ben';
+
+    obj.age = 23;
+
+    obj.todo = function () {
+
+        return this.name; //返回名字
+
+    }
+
+    // 2）嵌套式字面量  比较推荐 比较直观  可读性比较强
+
+    // (像是键值对的方式, key属性里面有了空格需要加引号，属性有连接符，或者保留字 关键字 calss for 需要添加引号)
+
+    var obj3 = {
+
+        name: 'ni', //属性
+
+        age: 30,
+
+        todo: function () {   //方法
+
+            cosole.log(this.name)
+
+        },
+
+        address: 'where'    //最后一个不用写逗号
+
+    }
+
+    // 由字面量延伸的函数表达式
+
+    function add() {//函数声明
+    }
+
+    var add1 = function (name, age) {//函数表达式
+    }
+// 函数声明和函数表达式的区别
+//函数声明 可以再声明前调用
+
+        add(3, 4)
+
+        function add(a, b) {
+            return (a + b)
+        }
+
+//函数表达式  必须先声明 才能使用它  调用需要放后面
+        var add1 = function (a, b) {
+            return a + b;
+        };
+        add1(11, 12);
+
+        // 3），构造函数
+        // 首字母必须要大写
+        // 需要实例化
+        // this指向实例化，普通函数this指向当前函数
+
+        function Oerson(name, age) {
+            ;   //传参方式
+
+            this.name = name;
+
+            this.age = age;
+
+            this.todo = function () {
+
+                return this.name;
+
+            }
+
+        }
+
+        var oerson = new Oerson('sonia', 20);  //Oerson就是构造器
+
+        var bbbb = new Oerson('liming', 28);//可以new不同的
+
+        console.log(oerson.name);      //实例化以后this指向的是小写的person
+        console.log(bbbb.name);
+        console.log(bbbb.todo());
+
+</script>
+</body>
+</html>

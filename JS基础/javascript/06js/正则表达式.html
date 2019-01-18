@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<!--<script>
+var reply=prompt("输入回复")
+var reg=/买[了个]{0,2}表/;
+if(reply.search(reg)!=-1){
+	alert("发现关键词");
+	}else{
+    alert("没有发现");
+		}
+
+</script>
+<script>
+var str="No zuo no die;no can no bi bi;"
+var reg=/no/ig;//g是全部(global)；i是忽略大小写
+var kwords=str.match(reg);
+console.log(kwords);
+if(kwords){//如果kwords没有返回的就是null，null在分支结构里就是false
+	console.log("共找打"+kwords.length+"个")
+	}else{
+		console.log("没有关键字")
+		}
+</script>
+<script>
+var str="\t Hello World \t";
+function ltrim(){
+	return str.replace(/^\s+/,"")
+	}
+console.log(ltrim())
+function rtrim(){
+	return str.replace(/\s+$/,"")
+	}
+console.log(rtrim())
+function trim(){
+	return str.replace(/^\s+|\s+$/,"")
+	}
+console.log(trim())
+
+</script>-->
+<script>
+var reg=/no/ig;
+var str="no zuo no die,No can no bi bi";
+var arr=null;
+while((arr=reg.exec(str))!=null){
+	console.log(arr);
+	console.log("在位置"+arr.index+"发现敏感词"+arr[0]);
+	console.log("下次从"+reg.lastIndex+"开始");
+	
+	}
+	
+var html='<link rel="stylesheet" href="index.css"/>'+
+'<body><a name="top"></a>'+
+'<h1>Hello</h1><a class="curr" href="http://tmooc.cn">go to tmooc</a>'+
+'<a name="center"></a><a href="http://tedu.cn" target="_blank">go to tedu</a></body>';
+
+ var reg=
+	/<a\s+(.*?)href=['"]([^'"]*)['"]/ig;//改贪婪变懒惰加个？括起来
+ //声明变量arr，初始化为null
+ var arr=null;
+ var urls=[]
+ //反复: 在html中找匹配reg的关键词，保存在arr中，如果结果不是null
+ while((arr=reg.exec(html))!=null){
+	//输出本次找到的关键词中的url
+	 urls.push(arr[0])//如果正则中有分组：括号为分组
+          //arr[1]->获得第1个分组的子内容
+		  //RegExp.$2:获得本次找到的关键词中第2个圆括号中的字内容压人urls
+ }
+ console.log(urls.join("\n"))		
+</script>
+<script>
+var reg=/^(?![a-zA-Z]+$)(?![a-z0-9]+$)[0-9A-Za-z]{6}$/;
+if(reg.test(prompt("输入密码"))){
+	alert("格式正确")
+	}else{
+		alert("强度太低")
+		}
+
+
+
+</script>
+</body>
+</html>

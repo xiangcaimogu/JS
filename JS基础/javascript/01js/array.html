@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<script>
+   var input;
+   var emps=[];
+   while(input!="exit"){
+	   input=prompt("输入员工姓名");
+	   if(input!="exit"){
+        emps[emps.length]=input
+		}else{
+			break;
+			};
+   }
+  document.write(emps)
+</script>
+</body>
+</html>

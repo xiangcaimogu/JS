@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <title>标题</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <script>
+      //如果已经启动cookie,则提示：
+      if(navigator.cookieEnabled)
+        document.write("cookie已启用，请妥善保存个人信息<br>");
+      //否则，就提示: 
+      else
+        document.write("cookie已禁用，无法自动登录<br>");
+
+      function checkPlugIn(pname){
+        //遍历plugins集合中每个插件
+        for(var i=0;
+            i<navigator.plugins.length;
+            i++){
+          //如果当前插件的name等于pname
+          if(navigator.plugins[i].name==
+              pname){
+            //提示: 已安装pname插件
+            document.write("已安装"+pname+"插件<br>");
+            return;//退出函数
+
+          }
+        }//(遍历结束)
+        //提示: 未安装pname插件，请下载
+        document.write("未安装"+pname+"插件，请下载<br>");
+      }
+      checkPlugIn("AliSSOLogin plugin");
+      checkPlugIn("QQMusic");
+    </script>
+  </body>
+</html>

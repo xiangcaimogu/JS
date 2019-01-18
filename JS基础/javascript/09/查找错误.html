@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<script>
+var n=345.678;
+var d=prompt("输入四舍五入的位数");
+try{
+	console.log(n.toFixed(d));
+	}catch(err){
+		alert(err.message);
+		}finally{
+			console.log("释放资源")
+			}
+</script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>京东首页</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        a{
+            color: #666;
+            text-align: center;
+            text-decoration: none;
+        }
+        a:hover{
+            color: red;
+            text-decoration: underline;
+        }
+        body{
+            font-family:"微软雅黑";
+            font-size: 12px;
+        }
+        #header{
+            width:auto;
+            border: 0px solid black;
+            background-color:#f1f1f1;
+        }
+        #head_box{
+            width:1200px;
+            margin:0 auto;
+            line-height: 30px;
+        }
+        .rt{
+            float: right;
+        }
+        .lf{
+            float: left;
+        }
+        #head_box ul li{
+            float: left;
+            margin-left:5px;
+        }
+        ul,li{
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+        }
+        b{
+            border-right:1px solid #ddd;
+            padding-left:5px ;
+        }
+        .vip{
+            padding-left:30px;
+            background: url(Images/vip.jpg) no-repeat;
+            background-position: left center;
+        }
+        .qy{
+            padding-left:30px;
+            background: url(Images/dakehu.jpg) no-repeat;
+            background-position: left center;
+        }
+        .fw{
+            border:1px solid transparent;
+            position: relative;
+            padding:0 12px;
+        }
+        .fw:hover{
+            background-color: #ffffff;
+            border:1px solid #ddd;
+            border-bottom: none;
+        }
+        #service{
+            position: absolute;
+            border:1px solid #ddd;
+            border-top:none;
+            left:0px;
+        }
+        #service li{
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+    <div id="head_box">
+        <img src="Images/star.jpg">
+        <a href="#">收藏首页</a>
+        <div class="rt">
+            <ul>
+                <li>"您好，欢迎来到京东"
+                    <a href="#">[登陆]</a>
+                    <a href="#">[注册]</a><b></b>
+                </li>
+                <li><a href="#">我的订单</a><b></b></li>
+                <li><a class="vip" href="#">会员俱乐部</a><b></b></li>
+                <li><a class="qy" href="#">企业频道</a><b></b></li>
+                <li><a href="#">手机京东</a><b></b></li>
+                <li class="fw"><a href="#">客服服务</a><b></b>
+                    <ul id="service">
+                        <li><a href="#">个人中心</a></li>
+                        <li><a href="#">个人中心</a></li>
+                        <li><a href="#">个人中心</a></li>
+                        <li><a href="#">个人中心</a></li>
+                        <li><a href="#">个人中心</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">网站导航</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="top_mian"></div>
+<div id="nav"></div>
+<div id="banner"></div>
+</body>
+</html>

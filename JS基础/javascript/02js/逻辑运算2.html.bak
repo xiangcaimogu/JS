@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <script>
+    var year=prompt("请输入年份");
+	year=parseInt(year);
+	var isLeapYear=(year%4==0&&year%100!==0)||(year%400==0);
+	console.log("是闰年么"+isLeapYeaar)
+  </script>
+ </body>
+</html>

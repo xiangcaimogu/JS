@@ -1,0 +1,114 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>二级联动列表</title>
+<meta charset="utf-8" />
+<style>
+	.hide{ display: none; }
+</style>
+<script>
+	/*实现“省”和“市”的级联下拉列表*/
+	var cities=[[],		/*0号下标没有元素*/
+[{"name":'东城区',"value":101},
+ {"name":'西城区',"value":102},
+ {"name":'海淀区',"value":103},
+ {"name":'朝阳区',"value":104}],
+[{"name":'河东区',"value":201},
+ {"name":'河西区',"value":202},
+ {"name":'南开区',"value":303}],
+[{"name":'石家庄市',"value":301},
+ {"name":'廊坊市',"value":302},
+ {"name":'保定市',"value":303},
+ {"name":'唐山市',"value":304},
+ {"name":'秦皇岛市',"value":304}]
+			];
+	
+</script>
+
+</head>
+<body>
+	<select name="provs" onchange="selCts(this)"><!--onchange:当选中项发生改变时触发-->
+		<option>—请选择—</option><!--0-->
+		<option>北京市</option><!--1-->
+		<option>天津市</option>
+		<option>河北省</option>
+	</select>
+	
+	<select name="cities" class="hide">4
+    
+	</select>
+ <script>
+    function selCts(sel){
+      //获得selProvs选中项的下标i
+      var i=sel.selectedIndex;//当前选中项的下标
+      //获取cities数组中i位置的子数组,保存在变量cts中
+      var cts=cities[i];
+      //查找name属性为cities的select元素保存在selCities中
+      var selCities=
+       document.querySelector("[name='cities']");
+      if(cts.length>0){//如果cts有元素
+        //清空selCities下的所有option
+        selCities.innerHTML="";
+        //创建文档片段frag
+        var frag=
+          document.createDocumentFragment();
+        //创建option，保存在opt
+        var opt=document.createElement("option");
+        //设置opt的内容为:-请选择-
+        opt.innerHTML="-请选择-";
+        //将opt添加到frag中
+        frag.appendChild(opt);
+        //遍历cts中每个城市对象
+        for(var i=0;i<cts.length;i++){
+          //创建option元素opt
+          var opt=
+            document.createElement("option");
+          //设置opt的值为当前城市对象的value
+          opt.value=cts[i].value;
+          //设置opt的内容为当前城市对象的name
+          opt.innerHTML=cts[i].name;
+          //将opt添加到frag下
+          frag.appendChild(opt);
+        }
+        //将frag添加到下
+        selCities.appendChild(frag);
+        selCities.className="";//清除class
+      }else{//否则
+        //修改selCities的class为hide
+        selCities.className="hide";
+      }
+    }
+  </script>
+
+<script>
+  function selCts(selProvs){
+  var i=selProvs.selectedIndex;//当前选中项的下标
+  var let=cities[i];
+  var getcites=document.querySelector("[name='cities']");
+  if(let.length==0){
+	  getcites.className="hide";
+	  }else{
+  getcites.className="";
+  getcites.innerHTML="";
+  /*var frag=document.createDocumentFragment();
+  var opt=document.createElement("option")
+  frag.appendChild(opt);
+  opt.innerHTML="-请选择-"
+  opt.value=-1;*/
+  var opt=new Option("请选择",-1)
+  getcites.add(opt)
+  for(var i=0;i<let.length;i++){
+	  /*var opt=document.createElement("option")//每遍历一个就添加一个option
+	  opt.innerHTML=let[i].name;
+	  opt.value=let[i].value
+	  frag.appendChild(opt);//追加到父元素frag里*/
+	  getcites.add(new Option(let[i].name,let[i].value))
+	  }
+  //getcites.appendChild(frag)
+	  }
+  }
+  </script>-->
+</body>
+
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<h5>点击显示隐藏</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias blanditiis consectetur debitis doloribus eaque eius, error, esse est in ipsam repudiandae sed voluptas. Assumenda incidunt ipsam natus nostrum odio.</p>
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+// $("h5").click(function () {
+//     var div=$(this).next();
+//     if(div.is(":hidden")){
+//         div.show()
+//     }else {
+//         div.hide()
+//     }
+// })
+$("h5").bind("click",function () {
+    var div=$(this).next();
+    if(div.is(":hidden")){
+        div.show()
+    }else {
+        div.hide()
+    }
+})
+</script>
+</body>
+</html>

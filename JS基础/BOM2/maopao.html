@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="maopao.css">
+    <title>Title</title>
+    <script>
+        function fun(){
+            var e=window.event||arguments[0];
+            this.style.backgroundColor="yellow";
+            var target=e.srcElement||e.target;
+            // alert(this.className);
+            alert(target.className);
+            this.style.backgroundColor="";
+            // if(e.stopPropargation){
+            //     e.stopPropargation()
+            // }else{e.cancelBubble=true;}
+        }
+        window.onload=function(){
+            var divs=document.querySelectorAll("div");
+            // var btn=document.getElementById("btn")
+            // divs[0].onclick=fun;
+            // divs[1].onclick=fun;
+            // divs[2].onclick=fun;
+            divs[0].addEventListener("click",fun,false)
+            // divs[1].addEventListener("click",fun,false)
+            // divs[2].addEventListener("click",fun,false)
+        }
+    </script>
+</head>
+<body>
+<div class="d1" id="btn" >
+    <div class="d2">
+        <div class="d3">
+        </div>
+    </div>
+</div>
+<script>
+    // var btn=document.getElementById("btn")
+    // btn.onclick=function(){
+    //     this.style.backgroundColor="yellow";
+    //     alert(this.className);
+    //     this.style.backgroundColor="";
+    //     // if(e.stopPropargation){
+    //     //     e.stopPropargation()
+    //     // }else{e.cancelBubble=true;}
+    // }
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+    <script>
+	   var str=prompt("请输入工资");
+	   var salary=parseInt(str)+1000;
+	    alert("您薪资为"+salary);
+
+
+		var change=10;
+		console.log("汇报的余额："+(change++));
+		console.log("实际的余额："+(change));
+
+
+		console.log("10"==10);
+		console.log("2">true)
+	</script>
+ </body>
+</html>

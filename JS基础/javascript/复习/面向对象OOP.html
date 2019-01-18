@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<script>
+//什么是对象，程序中描述现实中一个具体事物的属性和功能的结构，一个可以储存多个数据的存储空间
+//面向对象：程序中都是用一个对象来描述现实中的一个事物//这个事物就是面向对象
+		//事物的属性就是程序中对象的属性变量
+		//事物的功能就是程序中对象的发放变量
+
+//创建对象
+/*var obj={//var obj这是一个对象结构
+	属性名:属性值，//这是对象的属性
+	方法名：function(参数列表){方法体;return 返回值};//这是对象的方法
+	}*/
+//后面的面向对象用对象里面的属性和方法来描述这个事物	
+
+
+//js中的对象，底层都是一个关联数组。
+var Lilei={
+	"sname":"Li lei",
+	"age":18,
+	"intrSlef":function(){
+		alert("I'm Li lei,I'm 18")
+		}
+	}
+var hmm=[];
+hmm["sname"]="Han meimei";
+hmm["age"]=15;
+hmm["intrSlef"]=function(){
+		alert("I'm Han meimei,I'm 15")}
+		
+console.log(Lilei["sname"])
+console.log(hmm.sname)
+console.log(Lilei.__proto__)
+console.log(hmm.__proto__.__proto__)
+//第二种对象创建方法
+var hmm=new Object();
+hmm.sname="Han meimei";
+hmm.age=15;
+hmm.intrSlef=function(){
+		alert("I'm Han meimei,I'm 15")};
+
+//第三种对象创建方法，用一个构造函数			
+/*function 类型名/构造函数(参数列表){
+	this.属性名=参数；
+	this.方法名=function(){};
+	}
+调用构造函数创建对象
+var obj=new 类型名/构造函数(属性值)	
+	new：4件事
+	1.创建一个空对象
+	2.调用构造函数为空对象添加新属性
+	3.设置当前对象的__photo__属性指向构造函数的原型
+	4.将新对象的地址保存到obj中
+	*/
+function Student(name,age){
+	this.sname=name;
+	this.age=age;
+	this.intrSelf=function(){
+		alert("I'm"+this.sname+"I'm"+this.age)//this.name指的是当前对象属性的值，不是name形参，
+												//所有的this.属性都是指向对象Lilei.属性值
+		                                         //所以不是闭包,（写成name就成了闭包函数了）
+		}
+	}
+var Lilei=new Student("Li lei",18);//Li lei对象引用构造函数时，向对象Lilei里添加属性sname,age,intrSelf 
+var Hmm=new Student("Han meimei",16)
+console.log(Lilei.sname);
+console.log(Hmm.age);
+Lilei.intrSelf();
+
+
+function foo(){
+	return this.a
+	};
+var o={a:3,foo:foo}//foo:"foo",应该写成字符串，去掉双引号，就变成了可引用的对象，
+					//指向function foo()方法，如果有var foo变量优先指向变量
+console.log(o.foo())//3
+console.log(o.foo)//function foo(){}
+var p={a:4};
+p.foo=o.foo;//p.foo是调用的p里面foo的属性，但是p里面没有foo的属性，所以直接p里添加foo的属性
+console.log(p.foo)//function foo(){}
+console.log(p.foo())//4	
+</script>
+</body>
+</html>

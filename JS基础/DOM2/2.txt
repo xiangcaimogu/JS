@@ -1,0 +1,27 @@
+元素的属性：标准属性，自定义属性
+元素的样式***：内联样式 样式表
+
+元素属性：
+核心DOM；不带html的类型中定义的属性
+
+htmlDOM：在带HTML开头的类型中定义的属性
+
+比如：元素--》HTMLbodyElement的原型
+
+***一切从属性获取的值和设置到属性上的值都是字符串
+获取元素的属性值：4种
+1.var strValue=elem.getAttribute（"属性名"）
+2.elem.attributes[i/"html属性名"]集合：包含了当前所有属性的节点对象
+  elem.attributes[i/"属性名"].value-->属性值
+3.elem.attributeNode["属性名"]-->返回一个属性节点对象
+
+修改元素的属性值：2种
+elem.setAttribute("thml属性名","属性值")；
+何时使用：只设置一个属性值时
+
+移除元素的属性
+1.elem.removeAttribute("属性名")
+
+判断是否包含指定属性
+elem.hasAttribute("属性名")有-->true;没有-->false
+

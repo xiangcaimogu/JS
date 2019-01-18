@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<script>
+var kword="传焕";
+var URL="https://www.baidu.com/baidu?";
+kword=encodeURI(kword);
+console.log(kword);
+console.log(URL+kword);
+console.log("欢迎"+decodeURI(kword))
+
+</script>
+<script>
+var kword="http://tmooc.cn";
+var URL="https://www.baidu.com/baidu?";
+kword=encodeURIComponent(kword);
+console.log(kword);
+console.log(URL+kword);
+console.log("欢迎"+decodeURIComponent(kword));
+
+</script>
+</body>
+</html>

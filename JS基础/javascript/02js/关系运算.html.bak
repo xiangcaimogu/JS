@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+     <script>
+	 console.log(undefined==null);
+     console.log(typeof(undefined));
+	 console.log(typeof(null));
+	 console.log(undefined===null);
+
+     console.log(isNaN(""));//false
+	 //关系运算中"",可以自动转为0
+     console.log(isNaN("10"));//false
+	 //关系运算中"10"，可以自动转为10
+	 console.log(isNaN("12px"));//true
+	 console.log(isNaN(true));//false
+	 console.log(isNaN("true"));//true
+
+	 var temper=0;
+	 var weather="雨";
+	 var money=45;
+	 var downJacket=temper<-3;
+	 var umbrella=weather=="雨";
+	 var taxi=money>=45;
+	 console.log(downJacket+""+umbrella+""+taxi);
+	 </script>
+ </body>
+</html>

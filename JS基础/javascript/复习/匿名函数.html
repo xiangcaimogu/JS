@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<script>
+var n=10;
+function fun(m){//这边的m是参数
+	m--;
+	console.log(m)
+	};
+fun(n);//这边的n是参数值
+console.log(n);
+//匿名函数自调
+(function (n){//n参数列表
+   	n--//函数体
+	console.log(n)//return 值
+	})(n)//n参数值列表
+//回调：如果一个函数被另一个函数调用时
+var m=[1,6,7,3,5,4,8,10];
+m.sort(function(a,b){return a-b});
+console.log(m)		
+</script>
+</body>
+</html>

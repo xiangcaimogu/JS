@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<fieldset>
+<legend>
+	<!--<form onSubmit=" return formValidate()"><!--提交表单事件无法触发受到属性required底层事件阻止冒泡的影响
+    	<table>
+        	<tr>
+            	<td><input type="text" id="i1" required></td>
+            </tr>
+            <tr>
+            	<td><input type="submit"></td>
+            </tr>
+        </table>
+    </form>-->
+    	<form>
+    	<table>
+        	<tr>
+            	<td><input type="text" id="i1" required pattern="[0-9]{8}"></td>
+            </tr>
+        	<tr>
+            	<td><input type="email" id="i"></td>
+            </tr>
+            <tr>
+            	<td><input type="submit" onclick="formValidate()"></td>
+            </tr>
+        </table>
+    </form>
+</legend>
+</fieldset>
+<script>
+function formValidate(){//验证表单事件validity一共有8种方法
+	var input1=document.getElementById("i1");
+	if(input1.validity.valid){
+			console.log("input元素不为空")
+		}else if(input1.validity.valueMissing){<!--表示元素值是否为空匹配required使用-->
+		console.log("输入为空")
+		}else if(input1.validity.patternMismatch){<!--表示元素类型是否匹配-->
+			console.log("正则不对")
+			input1.placeholder="请输入8位数字"
+			}
+    var i=document.getElementById("i");
+    if(i.validity.typeMismatch) {
+        console. log("email输入有误")
+    }
+
+	}
+	// patternMismatch表示正则是否匹配--true表示不匹配false表示表达式匹配
+	// tooLong表示元素内容长度过长 配合max length使用--true表示不匹配false表示表达式匹配
+	// rangeUnderflow表示元素值是否小于min值配合min属性使用 --true表示小于min的值false表示不小于min的值
+	// custtomError
+</script>
+</body>
+</html>

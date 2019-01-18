@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<script>
+ function bubbleSort(arr){
+	 for(var n=1;n<=arr.length-1;n++){
+		 for(var i=0;i<arr.length-n;i++){
+			 if(arr[i]>arr[i+1]){
+				 var box=arr[i];
+				 arr[i]=arr[i+1];
+				 arr[i+1]=box;
+				 }
+			 }
+		 }
+	 }
+	 
+	 var arr=[4,5,3,2,6,7,9,8];
+	 document.write(arr+"<br>");//数组是引用值，数组不是在内存中直接占用位置，它是放在堆里在引用堆里的地址，执行了函数之后；堆里的数组放生改变，所以以后的引用都发生改变，和下面的全局变量直接赋值不一样
+	 bubbleSort(arr);
+	 document.write(arr+"<br>");
+</script>
+<script>
+function fun(num){
+	num-=3;
+	console.log(num);//7
+	};
+	var num=10;//这边的是全局变量，在下面调用函数的时候num赋值给函数，全局变量不改变值，只有函数执行的内部改变，函数执行完，就在内存中删除这一块函数占的位置
+	fun(num);
+	console.log(num);//10
+</script>
+</body>
+</html>

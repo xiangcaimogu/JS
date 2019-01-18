@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <script>
+     var c=prompt("请输入一个字符");
+	 var isNumber=c>="0"&&c<="9";
+	 var isAlphabet=(c>="A")&&c<="Z"||(c>="a"&&c<="z");
+	 console.log("\u4E00");
+	 console.log("\u9FA5");
+	 var isChinese=c>="\u4E00"&&c<="\u9FA5";
+	 console.log(isNumber+","+isAlphabet+","+isChinese);
+  </script>
+ </body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<script>
+function Flyer(fname,speed){
+	this.fname=fname;
+	this.speed=speed;	
+	}
+Flyer.prototype.fly=function(){
+	console.log(this.fname+"以"+this.speed+"公里/时速飞行")
+	}
+var bird=new Flyer("麻雀",40);
+bird.fly();
+
+function plane(fname,speed,capacity){
+  	Flyer.call(this,fname,speed)//使用当前调用Flyer构造函数，同时传入参数
+	/*  call: 强行借用一个本来无法调用到的函数
+    目标函数.call(obj)
+    执行时: 相当于obj.目标函数*/
+	this.capacity=capacity;	
+	}
+Object.setPrototypeOf(plane.prototype,Flyer.prototype);
+/*plane.prototype.fly=function(){
+	console.log(this.fname+"搭载"+this.capacity+"乘客"+this.speed+"公里/时速飞行")
+	}*/
+var A380=new plane("A380",1000,555);
+A380.fly()	
+</script>
+</body>
+</html>

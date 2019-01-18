@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<script>
+var round=0;
+while(round<3){
+	if(round==2){console.log("晕");
+	break;//强行退出循环
+	}
+console.log("转一圈");
+round+=1;
+}
+console.log("停车")
+</script>
+<script>
+  var n=10;
+  var input=1;
+  while(input!=n){
+	  input=prompt("你猜");
+	  if(input=="exit"){
+		  alert("放弃");
+		  break;
+		  }else{//否则，类型转换，再做比较
+			  input=parseInt(input);
+			  if(n>input){
+				  alert("小了");
+				  }else if(n<input){
+					alert("大了")
+					}else{
+						alert("猜对了");
+					}
+					}
+				}
+		  
+</script>
+<!--<script>
+var n=parseInt(Math.random()*(10-0+1)+0)
+do{
+	var input=prompt("你猜");
+	  if(input=="exit"){
+		  alert("放弃");
+		  break;
+		  }else{//否则，类型转换，再做比较
+			  input=parseInt(input);
+			  if(n>input){
+				  alert("小了");
+				  }else if(n<input){
+					alert("大了")
+					}else{
+						alert("猜对了");
+					}
+					}
+	}while(input!=n);
+</script>-->
+<!--<script>
+var count=0;
+var year=2001;
+while(count<5){
+	if((year%4==0&&year%100!=0)||(year%400==0)){
+		console.log(year);
+		count++;//只有得到一个闰年，count就加一
+		}
+		year++;//每次判断一年后加一年
+		}
+</script>-->
+<script>
+//找出100到999之间的水仙花数
+//循环条件num<=999
+//循环变量unm++
+/*循环体
+  取出百位
+  十位
+  个位
+  判断num==百位*百位*百位+十位**十位*十位+...
+  输出num*/
+  for(var num=100;num<=999;num++){
+	  var hd=parseInt(num/100);
+	  //parseInt用来取除数的整数部分正好等于百位数
+	  var ten=parseInt((num%100)/10);
+	  var one=num%10;
+	  if(num==hd*hd*hd+ten*ten*ten+one*one*one){
+		  console.log(num)
+		  }
+		  }   
+</script>
+</body>
+</html>

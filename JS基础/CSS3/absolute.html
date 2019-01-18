@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul,li{
+            padding: 0px;
+            margin:0px;
+            list-style: none;
+        }
+        .div1{
+            border: 1px solid black;
+            margin: 0px auto;
+            background-color: #c1c1c1;
+        }
+        #sou>li{
+            float: left;
+            width: 80px ;
+            line-height: 30px;
+            font-size: 18px;
+            text-align: center;
+        }
+        #sou>li:hover{
+            background-color: #ffffff;
+        }
+        .down{
+            position: relative;
+        }
+        #lop{
+            position: absolute;
+            border: 1px solid black;
+            top:30px;
+            left:0px;
+            width:80px;
+            background-color: #cccccc;
+        }
+        .clearfix{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<div class="div1">
+    <ul id="sou">
+        <li>首页</li>
+        <li class="down">首页
+            <ul id="lop">
+                <li>小菜</li>
+                <li>小菜</li>
+                <li>小菜</li>
+                <li>小菜</li>
+            </ul>
+        </li>
+        <li>首页</li>
+        <div class="clearfix"></div>
+    </ul>
+</div>
+
+</body>
+</html>

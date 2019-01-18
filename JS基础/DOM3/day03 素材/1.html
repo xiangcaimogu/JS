@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <title>标题</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <script>
+      var a=document.createElement("a");
+      a.href="http://tmooc.cn";
+      a.innerHTML="go to tmooc";
+      document.body.appendChild(a);
+      //在a之前，插入一个button，提示before
+      var btn=
+        document.createElement("button");
+      btn.innerHTML="click me!";
+      btn.onclick=function(){
+        alert("before");
+      }
+      document.body.insertBefore(
+        btn,a
+      );
+      //将a替换为一个input button 提示after
+      var inputBtn=
+        document.createElement("input");
+      inputBtn.type="button";
+      inputBtn.value="约么?";
+      inputBtn.onclick=function(){
+        alert("不约");
+      }
+      document.body.replaceChild(
+        inputBtn,a
+      );
+    </script>
+  </body>
+</html>

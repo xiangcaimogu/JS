@@ -1,0 +1,41 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>取消与利用冒泡</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="../3.css"/>
+		<script>
+			function calc(e){//事件发生时，
+				var target=e.srcElement||e.target;
+				if(target.nodeName=="BUTTON"){
+				var sc=document.getElementById("sc")
+				if(target.innerHTML=="C"){
+					sc.innerHTML=""
+					}else if(target.innerHTML=="="){
+						try{
+						sc.innerHTML=eval(sc.innerHTML);
+						}catch(err){
+						sc.innerHTML=err.message;
+							}
+					}else{
+						sc.innerHTML+=target.innerHTML
+					}
+				}
+				}
+		</script>
+	</head>
+	<body>
+		<div id="keys" onClick="calc(event)"><!--事件在这个位置放生，让这个事件发生的对象叫事件目标(下面的button)target用来<br>
+                                                 获取事件目标，不会随着冒泡发生改变-->
+			<button>1</button>
+			<button>2</button><!--不管有没有绑定事件对象，都会有事件周期，产生冒泡，-->
+			<button>3</button>
+			<button>4</button><br>
+			<button>C</button>
+			<button>+</button>
+			<button>-</button>
+			<button>=</button>
+		</div>
+		<textarea id="sc" style="resize:none;width:200px; height:50px;" readonly></textarea>
+	</body>
+</html>

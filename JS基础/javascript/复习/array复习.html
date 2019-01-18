@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<script>
+//程序里面两大区域：一个栈区，一个堆区
+//原始类型：数据保存在变量本地栈区，只能保存一个值
+//引用类型：数据保存在“堆”里，都是由地址指向实际数据
+//数组是引用类型的对象
+var week=["日","一","二","三","四","五","六"]
+for(var i=0;i<week.length;i++){
+	console.log(week[i]="星期"+week[i])
+	}
+var day=week;
+//栈区新开day变量复制一个week，由新地址引用week，下面产生新数组这边引用着所以不会释放
+console.log(day)
+week=["sun","mon","tus","wed","thu","fri","sat"]
+console.log(week)	
+//新创建一个数组对象
+//将新对象地址保存到原week变量中替换旧地址
+//旧数组对象释放，等待垃圾回收
+//week变量"引用了"新数组对象
+
+//var arr=new Array(num)
+//new 要在堆中开辟空间
+//Array ECMAScript标准中的内置类型
+//new Array 在堆中创建一个数组类型的存储区域
+//num 初始创建num个元素
+
+null
+//null：代表一个变量没有指向任何对象，替代上面引用类型的地址
+//var 对象=null 何时使用 主动释放对象！主动释放的对象不能被找回
+//垃圾回收：JS引擎自动销毁不再被引用的对象！(释放之后的对象)
+undefined
+//初始化未赋值的变量
+
+week.length 
+//可以修改数组里面的元素个数,扩容 缩容
+//arr.length-1是最后一个元素
+//arr[arr.length]="新值"
+
+//向数组里追加新元素
+var input;
+var arr=[];
+while(input!=="exit"){
+	input=prompt("输入员工姓名");
+	if(input!="exit"){
+		arr[arr.length]=input
+		}else{
+			break;
+			}
+	}
+//简便的方法
+/*var input;
+var arr=[];
+while((input=prompt("输入员工姓名"))!="exit"){//既赋值再表达式的值做判断
+		arr[arr.length]=input	
+	}
+console.log(arr)*/
+
+</script>
+<script>
+var week=["日","一","二","三","四","五","六"];
+//数组遍历
+//对数组中每个元素执行相同的操作
+for(var i=0;i<week.length;i++){
+	week[i]="星期"+week[i];
+	}
+console.log(week)
+
+//关联数组
+//数组元素无法自己描述自己值的意义时
+//关联数组里的length属性作废的
+var fbb=[];
+fbb["姓名"]="范冰冰";
+fbb["数学"]=90;
+fbb["语文"]=80;
+fbb["英文"]=99;
+for( key in fbb){
+	document.write(key+":"+fbb[key]+"<br>")
+	}
+arr=[5,6,3,4,7,8,9];
+for(var a=0;a<=arr.length-1;a++){
+	for(var i=0;i<arr.length-a;i++){
+		if(arr[i]>arr[i+1]){
+			var n=arr[i+1];
+			arr[i+1]=arr[i];
+			arr[i]=n;
+			}
+		}
+	}
+console.log(arr);
+function bubbleSort(arr){
+	for(var a=0;a<=arr.length-1;a++){
+	for(var i=0;i<arr.length-a;i++){
+		if(arr[i]>arr[i+1]){
+			var n=arr[i+1];
+			arr[i+1]=arr[i];
+			arr[i]=n;
+			}
+		}
+	}
+	//return?这边不需要return，因为arr是引用类型，全局变量arr和函数环境栈里的局部变量arr都指向堆中同一个
+	//地址，所以局部变量的改变，引用类型arr全局也改变。
+	}
+function fun(num){
+	num-=3;
+	console.log()
+	}
+	var num=10;//num是原始类型，是保存在栈里的，函数里的num不是引用的全局变量num，而是在函数的环境栈里复制了一份，
+	//所以全局变量num没有改变，只有局部变量num改变了
+	fun(num);//7
+	console.log(num)//10
+bubbleSort(arr)
+
+//10进制转2进制
+var n=prompt("输入一个整数");
+var arr=[];
+    while(n>0){
+		arr.push(n%2);
+		n=parseInt(n%2);
+		}
+console.log(arr.join(""))
+
+</script>
+</body>
+</html>

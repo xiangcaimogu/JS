@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+ <head>
+	<meta charset="UTF-8">
+	<title>根据页面滚动位置显示浮动框</title>
+	<link rel="stylesheet" href="css/7.css"/>
+	<script>
+	window.onscroll=function(){
+		var top=document.documentElement.scrollTop||document.body.scrollTop;
+		var totop=document.getElementById("toTop");
+		if(top>=300){
+			
+			totop.style.display="block"
+			}else{
+			totop.style.display="none";
+			}
+		}
+	</script>
+ </head>
+ <body>
+	<div id="toTop">
+		<a href="#">返回顶部</a>
+	</div>
+ </body>
+</html>

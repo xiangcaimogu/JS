@@ -1,0 +1,285 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+header,#top_main,nav,article,footer,section{
+	border:1px solid black
+	}
+body{
+	font-size:12px;
+	color:#666;
+	margin:0px;
+	padding:0px;
+	font-family:"微软雅黑";
+	}
+ul,li,p,h1,h2,h3,h4,h5,h6{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	}
+input{
+	border:none;
+	}
+.lf{float:left;
+	}
+.rt{
+	float:right;
+	}
+.clear{
+	clear:both;
+	}
+#top_box,#top_main,#nav,#banner,#main,#foot_box,#footer{
+	width:1211px;
+	margin:0 auto;
+	}
+#top{
+	width:100%;
+	height:30px;
+	background-color:#f7f7f7;
+	line-height:30px;/*文本行高和高度一样设置垂直居中，只要在top里面的文本行高都是30px*/
+	border-bottom:1px solid #eee;
+	}
+#top_box{
+	height:30px;
+	}
+#top_main{
+	padding:15px 0;
+}
+#nav{
+	height:40px;
+	}
+#banner{
+	/*height:200px;*/
+}
+#main{
+	height:100px
+}
+#foot_box{
+	height:173px;
+	}
+#footer{
+	height:180px;
+	}
+a{
+	color:#666;
+	text-decoration:none;/*清除链接样式*/
+	}
+a:hover{
+	text-decoration:none;
+	color:#ff0700;}
+#top_box>img{float:left;margin:9px 4px}
+#top_box>a{line-height:30px;float:left;}
+#top_box ul{float:right;}
+#top_box ul li{
+	float:left;
+	text-align:center;
+	margin-right:5px;
+	position:relative;/*给后面弹出菜定位单用的*/
+	z-index:1;}
+#top_box ul li b{
+	border-left:1px solid #ddd;
+	padding-right:5px;
+	}
+li.vip a{
+	padding-left:30px;
+	background:url(Images/vip.jpg) no-repeat left center}
+li.dakehu a{
+	padding-left:30px;
+	background:url(Images/dakehu.jpg) no-repeat left center;
+	}
+li.app_jd a{
+	display:inline-block;
+	height:30px;/*a元素是行内元素，设置inline-block既保持了内联元素的浮动，又可以设置宽高，高度被行高line-height：30px撑起来了*/
+	padding-left:20px;
+	background:url(Images/iconlist_2.png) no-repeat -126px -357px;}
+li.app_jd a:hover{
+	background-position:-126px -397px;}
+li.service>a{
+	border:1px solid transparent;
+	display:inline-block;
+	height:30px;
+	padding:0 15px;
+	background:url(Images/jt_down.jpg) no-repeat right center;}
+li.service>a:hover{
+	background-image:url(Images/jt_up.jpg);
+	background-color:#fff;
+	border:1px solid #ddd;
+	border-bottom:none;
+	position:relative;
+	z-index:3;}
+#service_items{
+	position:absolute;/*为啥定位之后里面的li浮动会消失？？？？*/
+	border:1px solid #ddd;
+	border-top:none;
+	background-color:#fff;
+	box-shadow:0 0 10px #ddd;
+	z-index:2;
+	top:27px;
+	left:6px;}
+#service_items li{
+	padding-left:15px;}
+#search_box{width:510px;padding:4px 80px 0px 40px;}
+div.search{width:500px;height:30px;border:3px solid #e4393c;background-color:#e4393c;}
+input.text{width:405px;padding:5px;height:20px;background-color:#fff;line-height:20px;color:#999;}
+input.button{width:75px;background-color:#e4393c;color:#fff;line-height:30px;height:30px}
+div.hot_words{height:18px;overflow:hidden;}
+div.hot_words span,div.hot_words a{margin-right:10px;color:#999;}
+#foot_box{
+	margin-top:12px;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	}
+#foot_box p{
+	float:left;
+	width:40px;
+	height:40px;
+	margin:5px 5px 0 55px;
+	background-image:url(Images/iconlist_2.png);
+	background-repeat:no-repeat;
+	}
+p.shopping_quide{background-position:0 -55px}
+p.send_type{background-position:-50px -55px}
+#foot_box ul{
+	width:140px;
+	float:left;
+}
+</style>
+</head>
+<body>
+<!--------页面顶部----------->
+<header id="top">
+	<div id="top_box">
+    	<img src="Images/star.jpg">
+        <a href="#">收藏京东</a>
+        <ul>
+        	<li>您好，欢迎来到京东
+                	<a href="#">[登录]</a>
+                	<a href="#">[免费注册]</a>
+                </li>
+                <li>
+                	<b></b>
+                    <a href="#">我的订单</a>
+                </li>
+                <li class="vip">
+                	<b></b>
+                	<a href="#">会员俱乐部</a>
+                </li>
+                <li class="dakehu">
+                	<b></b>
+                	<a href="#">企业频道</a>
+                </li>
+                <li class="app_jd">
+                	<b></b>
+                	<a href="#">手机京东</a>
+                </li>
+                <li class="service">
+                	<b></b>
+                	<a href="#">客户服务</a>
+                    <!--弹出的子菜单-->
+                    <ul id="service_items">
+                    	<li><a href="#">帮助中心</a></li>
+                        <li><a href="#">售后服务</a></li>
+                        <li><a href="#">在线客服</a></li>
+                        <li><a href="#">投诉中心</a></li>
+                        <li><a href="#">客服邮箱</a></li>
+                    </ul>
+                </li>
+                <li>
+                	<b></b>
+                	<a href="#">网站导航</a>
+                </li>
+        </ul>
+    </div>
+</header>
+<!-----------LOGO和搜索框--------------->
+<div id="top_main">
+	<a href="#" class="lf">
+    	<img src="Images/logo-201305.png">
+    </a>
+    <!------搜索热门------->
+	<div id="search_box" class="lf">
+    	<div class="search">
+        	<input id="textSearch" class="text">
+            <input type="button" class="button" value="搜索">
+        </div>
+        <div class="hot_words">
+        	<span>热门搜索：</span>
+            <a href="#">家纺11月大促</a>
+            <a href="#">南极人</a>
+            <a href="#">彩虹电热毯</a>
+            <a href="#">家纺11月大促</a>
+            <a href="#">家纺11月大促</a>
+        </div>
+    </div>
+    <!------我的京东-------->
+	<div id="my_jd" class="lf">我的京东</div>
+    <!--------去购物车结算---->
+	<div id="settle_up" class="lf">去购物车结算</div>
+    <div class="clear"></div>
+</div>
+<!----------页面和导航-------------------->
+<nav id="nav"></nav>
+<!----------banner----------->
+<article id="banner"></article>
+<!---------主题部分----------------->
+<section id="main"></section>
+<!---------购物指南,配送方式-------------->
+<footer id="foot_box">
+	<p class="shopping_quide"></p>
+    <ul>
+    	<li><b>购物指南</b></li>
+        <li><a href="#">购物流程</a></li>
+        <li><a href="#">会员介绍</a></li>
+        <li><a href="#">团购/机票</a></li>
+        <li><a href="#">常见问题</a></li>
+        <li><a href="#">大家电</a></li>
+        <li><a href="#">联系客服</a></li>
+    </ul>
+    <p class="send_type"></p>
+    <ul>
+    	<li><b>购物指南</b></li>
+        <li><a href="#">上门提取</a></li>
+        <li><a href="#">211限时达</a></li>
+        <li><a href="#">配送服务</a></li>
+        <li><a href="#">海外配送</a></li>
+        <li><a href="#">大家电</a></li>
+        <li><a href="#">联系客服</a></li>
+    </ul>
+    <p class=""></p>
+    <ul>
+    	<li><b>购物指南</b></li>
+        <li><a href="#">购物流程</a></li>
+        <li><a href="#">会员介绍</a></li>
+        <li><a href="#">团购/机票</a></li>
+        <li><a href="#">常见问题</a></li>
+        <li><a href="#">大家电</a></li>
+        <li><a href="#">联系客服</a></li>
+    </ul>
+    <p class=""></p>
+    <ul>
+    	<li><b>购物指南</b></li>
+        <li><a href="#">购物流程</a></li>
+        <li><a href="#">会员介绍</a></li>
+        <li><a href="#">团购/机票</a></li>
+        <li><a href="#">常见问题</a></li>
+        <li><a href="#">大家电</a></li>
+        <li><a href="#">联系客服</a></li>
+    </ul>
+    <p class="shopping_quide"></p>
+    <ul>
+    	<li><b>购物指南</b></li>
+        <li><a href="#">购物流程</a></li>
+        <li><a href="#">会员介绍</a></li>
+        <li><a href="#">团购/机票</a></li>
+        <li><a href="#">常见问题</a></li>
+        <li><a href="#">大家电</a></li>
+        <li><a href="#">联系客服</a></li>
+    </ul>
+</footer>
+
+<!----------页面底部----------------------->
+<footer id="footer"></footer>
+</body>
+</html>

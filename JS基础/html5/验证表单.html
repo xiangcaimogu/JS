@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<form>
+<input type="text" required id="li">
+<input type="submit" onClick="formValidate()">
+</form>
+<script>
+function formValidate(){
+	var i=document.getElementById("li");
+	if(i.validity.valueMissing){
+		i.setCustomValidity("输入不能为空")//setCustomValidity自定义验证消息
+		}else if(i.validity.customError){
+			i.setCustomValidity("")
+			}	
+	}
+</script>
+</body>
+</html>

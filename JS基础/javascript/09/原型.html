@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body><script>
+if("trim" in String.prototype){
+	document.write("String支持trim")
+	}else{
+		document.write("String不支持trim")
+		}
+
+/*当前游览器中String类型的原型对象是否包含trim方法*/
+if(!("trim" in String.prototype)){//如果不包含
+document.write("自定义了trim方法")
+	String.prototype.trim=function(){
+		return this.replace(/^s+|s+$/g,"");
+		}
+	}
+var str="\t hello word \t";
+document.write(str.trim());
+
+/*判断并自定义数组的indexof方法*/
+if(!("indexOf" in Array.prototype)){
+	Array.prototype.indexOf=function(kword,fromi){
+		fromi===undefined&&(fromi=0);
+			for(;fromi<this.length;fromi++){
+				if(this[fromi]==kword){
+					return fromi;
+					}
+				}return -1;
+			}
+		
+	}
+var arr=["no","zuo","no","die"];
+document.write(arr.indexOf("no"));
+document.write("<br>");
+document.write(arr.indexOf("no",1));
+document.write("<br>");
+document.write(arr.indexOf("no",3));
+</script>
+
+</body>
+</html>

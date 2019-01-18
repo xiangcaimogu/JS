@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<script>
+var sum=0;
+//循环条件：加数<=100；
+//循环变量：加数，从1，每次+1
+//循环体：sum+=加数
+/*for(var i=1;i<100;i++){
+	sum+=i}
+console.log(sum);*///和下面的一样的效果
+for(var i=1;i<100;sum+=i++){
+	}
+console.log(sum);
+</script>
+<script>
+var bao=4;
+for(var box=1;box<=9;box++){
+	if(box==bao){
+		continue;
+		};
+		console.log("跳到"+box)
+	}
+</script>
+<script>
+var sum=0;
+for(var i=1;i<=100;i++){
+	sum+=i;
+	}
+console.log(sum)
+</script>
+<script>
+
+var str=""
+for(var i=1;i<=9;i++){
+	str+=i+"*9="+(i*9)+" ";
+	console.log(str)
+	}
+	console.log(str);
+//var str=""
+//for(var i=1;i<=8;i++){
+//	str+=i+"*9="+(i*8)+" ";
+//	}
+//	console.log(str)
+//	var str=""
+//for(var i=1;i<=7;i++){
+//	str+=i+"*9="+(i*7)+" ";
+//	}
+//	console.log(str)	
+</script>
+<script>
+//第N行
+//循环条件：行数<=9
+//循环变量：行数，从一开始，每次+1
+for(var n=1;n<=9;n++){
+	var str=""
+   for(var i=1;i<=n;i++){
+	  str+=i+"*"+n+"="+(i*n)+" ";
+	  }
+	  console.log(str)
+	  }
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<script>
+/*function Student(name,age){
+	this.sname=name;
+	this.age=age;
+	this.intrSelf=function(){
+		alert("I'm"+this.sname+"I'm"+this.age)//this.name指的是当前对象属性的值，不是内层属性的值，
+												//所有的this.属性都是指向对象Lilei.属性值
+		                                         //所以不是闭包,（写成name就成了闭包函数了）
+		}
+	}
+var Lilei=new Student("Li lei",18);//Li lei对象引用构造函数时，向对象Lilei里添加属性sname,age,intrSelf 
+var Hmm=new Student("Han meimei",16)*/
+
+function Student(name,age){
+	this.sname=name;
+	this.age=age;
+	}
+Student.prototype.intrSelf=function(){
+		alert("I'm"+this.sname+"I'm"+this.age)
+		}	
+var Lilei=new Student("Li lei",18)
+var Hmm=new Student("Han meimei",16)
+console.log("intrSelf" in Hmm)//in关键字"属性名"in 对象
+								//只要这个属性名在这个对象的原型链上输出为true
+Lilei.intrSelf();
+Hmm.intrSelf();
+console.log(Hmm.__proto__)
+console.log(Hmm.__proto__.__proto__)
+
+//原型相关API
+/*判断对象的自有还是共有*/
+//判断一个属性是否可用
+//当前游览器中string类型的原型对象是否包含trim方法
+if(!("trim" in String.prototype)){
+	    string.prototype.trim=function(){
+		return this.replace(/^\s+|\s+$/g,"")
+		}
+	}
+var str="\t hello world \t"	;
+document.write(str.trim())
+
+//专门判断是否自有属性：obj.hasOwnProperty("成员")
+
+//判断共有属性，不是自有属性
+/*
+i(!(obj.hasOwnProperty)
+	&&"成员" in obj){}
+*/
+
+//获得父对象的原型var 父对象=Object.getprototypeOf(对象)
+
+//判断父对象是否处在子对象原型链的上级
+//父对象.isPrototypeOf(子对象)，在就返回true
+function fun(){};
+console.log(
+Function.prototype.isPrototypeOf(fun())
+)
+
+//删除对象中的属性 delete 对象.成员
+//只能删除自有成员
+
+//判断一个对象是不是数组
+var arr=[];//Array.prototype
+var obj={};//object.prototype
+var fun=function(){};
+//第一种
+if(Array.prototype.isPrototypeOf(arr)){
+	console.log("arr是数组")
+	}
+//第二种
+//instanceof也是会查找原型链上所有构造函数
+//返回true和false	
+if(arr instanceof Array){
+	console.log("arr是数组")
+	}
+if(arr instanceof Object){
+	console.log("arr是对象")//他可以查找arr是Object的
+	}
+
+//第三种
+if(Object.getPrototypeOf(arr)==Array.prototype){
+	console.log("arr是数组")
+	}
+//第四种
+Object.call(arr)
+console.log(arr.toString());//数组的toString输出的是数组的元素内容，Object的方法被Array重写了，没有tostring方法，所以arr调用不到原生object原型方法（object.prototype.tostring)
+console.log(obj.toString());//原声的toSting输出的[object 类型名]
+console.log(fun.toString());//函数的toString输出的是函数的定义
+console.log(Object.prototype.toString.call(arr));//call方法让arr继承object原型里面的tostring方法
+console.log(Object.prototype.toString.call(obj));//
+console.log(fun.toString())
+//重写：override:子对象觉得父对象的成员不好用，自己定义一个覆盖
+//Object.prototype.tostring()
+//call()/apply():
+var Pet = {
+    words : '...',
+    speak : function (say) {
+        console.log(say + ''+ this.words)
+    }
+}
+Pet.speak('Speak'); // 结果：Speak...
+
+var Dog = {
+    words:'Wang'
+}
+
+//将this的指向改变成了Dog
+Pet.speak.call(Dog, 'Speak'); //结果： SpeakWang  翻译：就是调用pet里面的speak方法时，把speak里面的this指向了Dog
+
+// obj.call(thisObj, arg1, arg2, ...);
+// obj.apply(thisObj, [arg1, arg2, ...]);
+// 两者作用一致，都是把obj(即this)绑定到thisObj，这时候thisObj具备了obj的属性和方法。或者说thisObj『继承』了obj的属性和方法。绑定后会立即执行函数。
+//父类 Person
+function Person() {
+    this.sayName = function() {
+        return this.name;
+    }
+}
+
+//子类 Chinese
+function Chinese(name) {
+    //借助 call 实现继承
+    Person.call(this);
+    this.name = name;
+
+    this.ch = function() {
+        alert('我是中国人');
+    }
+}
+
+//子类 America
+function America(name) {
+    //借助 call 实现继承
+    Person.call(this);//就是改变函数person体内部 this 的指向；这边的this就是当前函数America,不在指向person了，总结就是改变了作用域
+    this.name = name;
+
+    this.am = function() {
+        alert('我是美国人');
+    }
+}
+
+//测试
+var chinese = new Chinese('成龙');
+//调用 父类方法
+console.log(chinese.sayName());   //输出 成龙
+
+var america = new America('America');
+//调用 父类方法
+console.log(america.sayName());   //输出 America
+</script>
+<script>
+//继承
+/*
+1.修改子对象__proto__属性，指向父对象
+Object.setprototypeOf(子对象，父对象)；
+何时使用：只修改一个对象的父对象时使用
+2.修改函数的原型对象，实现统一修改将要创建的所有子对象的父对象
+***创建所有子对象之前.
+构造函数.prototype=父对象
+何时使用：批量修改未来所有子对象*/
+function Student(name,age){
+	this.sname=name;
+	this.age=age;
+	}
+var father={car:"BMM",balance:1000000};
+Student.prototype=father;
+Student.prototype.intrSelf=function(){
+	console.log("I'm"+this.sname+"I'm"+this.age);
+	}
+var lilei=new Student("Li lei","18");
+var Hmm=new Student("Han meimei","13");
+
+console.log(Hmm.car)
+var Hmm=new Student("Han meimei","13");
+//重写tostring
+function Student(name,age){
+	this.sname=name;
+	this.age=age;
+	}
+Student.prototype.tostring=function(){
+	return "I'm"+this.sname+"I'm"+this.age;
+	}
+var lilei=new Student("Li lei","18");
+var Hmm=new Student("Han meimei","13");
+document.write(lilei.tostring())
+//克隆
+Object.prototype.clone=function(){
+	var newObj;
+	if(!(this instanceof Number)
+	&&!(this instanceof String)
+	&&!(this instanceof Boolean)
+	){newObj=new this.constructor()
+	}else{
+		newObj=new this.constructor(this.valueOf())
+		}
+		
+	for(var prop in this){
+		if(this.hasOwnProperty(prop)){
+	newObj[prop]=this[prop]
+	}
+	}return newObj;
+	}
+	
+function Student(name,age){
+	this.sname=name;
+	this.age=age;
+	}
+Student.prototype.intrSelf=function(){
+	console.log("I'm"+this.sname+"I'm"+this.age);
+	}
+var lilei=new Student("Li lei","18");
+var Hmm=new Student("Han meimei","13");
+var kelong=lilei.clone()
+console.log(kelong)
+var n="hello word"
+console.log(n.clone())	
+</script>
+</body>
+</html>

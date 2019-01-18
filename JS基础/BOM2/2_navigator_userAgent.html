@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <title>标题</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <script>
+document.write(
+  "<h1>"+navigator.userAgent+"<h1>");
+//将userAgent属性保存在变量userAgent中
+var userAgent=navigator.userAgent;
+//声明变量browser,初始化为"unknown"
+var browser;
+//如果在userAgent中找到IE
+userAgent.indexOf("IE")!=-1?
+  browser="IE"://将browser赋值为IE
+//否则，如果在userAgent中找到Firefox
+userAgent.indexOf("Firefox")!=-1?
+  //将browser赋值为Firefox
+  browser="Firefox":
+//否则，如果在userAgent中找到OPR
+userAgent.indexOf("OPR")!=-1?
+  browser="Opera"://将browser赋值为Opera
+//否则，如果在userAgent中找到Chrome
+userAgent.indexOf("Chrome")!=-1?
+  //将browser赋值为Chrome
+  browser="Chrome":
+//否则，如果在userAgnet中找到Safari
+userAgent.indexOf("Safari")!=-1?
+  //将browser赋值为Safari
+  browser="Safari":
+//否则，如果在userAgent中找到Trident
+userAgent.indexOf("Trident")!=-1?
+  browser="IE"://将browser赋值为IE
+  browser="unknown";
+document.write("浏览器: "+browser);
+//声明变量version，初始化为unknown
+var version="unknown";
+//如果browser不是unknown
+if(browser!="unknown")
+  //如果browser是Opera
+  if(browser=="Opera"){
+   //在userAgent中找OPR的位置+3+1,保存在i
+   var i=userAgent.indexOf("OPR")+3+1;
+   //截取userAgent中i位置开始后的3位,转为浮点数,保存在version中
+   version=parseFloat(
+    userAgent.slice(i,i+3)
+   );
+  }else if(browser=="IE"
+    &&userAgent.indexOf("IE")==-1){
+  //否则，如果browser是IE,且userAgent中找不到IE
+    //设置version为11
+    version=11;
+  }else{//否则
+    //在userAgent中查找browser的位置，+browser的长度+1，保存在i中
+    var i=userAgent.indexOf(browser)
+          +browser.length+1;
+    //截取userAgent中i位置开始后的3位，转为浮点数，保存在version中
+    version=parseFloat(
+      userAgent.slice(i,i+3)
+    );
+  }
+document.write("版本: "+version);
+    </script>
+  </body>
+</html>

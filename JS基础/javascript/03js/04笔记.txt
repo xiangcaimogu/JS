@@ -1,0 +1,7 @@
+encodeURI:将url中的非法字符转为单字节符号--编码
+decodeURI：将encodeURI转后的字符串，转换回原文--解码
+Unicode编码：每个字符2字节
+utf-8编码：字母，数字单字节，汉子3字节
+
+encodeURIComponent:既能对多字节非法字符编码，又能对单字节非法字符编码。
+decodeURIComponent：对encodeURIComponent进行解码
