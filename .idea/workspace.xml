@@ -1,7 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db679fc3-18c7-49f5-80f6-80447c69e115" name="Default" comment="" />
+    <list default="true" id="343ac8e9-4ebd-456f-b72d-8947450e8b9d" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/JS基础/CSS3/.idea/CSS3.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/JS基础/CSS3/.idea/modules.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/JS基础/CSS3/.idea/workspace.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/5464795dN8179a200.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/546ab63aNaa4d5732.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/app_jd_1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/app_jd_erwei.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/app_jd_wangyin.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/cate_banner_01.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/cate_banner_02.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/cx.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/cy.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/dakehu.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/gw01.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/gwc.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/iconlist_1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/iconlist_2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/iconlist_3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/images/search_01.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/images/search_02.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/images/search_04.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/images/search_05.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/537b3130N7591211b.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/537b3138N3205302e.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/537b3152Nf0573a0d.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/537b316bN35574fff.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/537b3173Ne74bf3cf.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/53829f6eNa98427dc.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/54caf3a2N56357d7c.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/ad-arraw-hover.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/ad-arraw.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/ad_01.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/ad_02.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/ad_03.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/ad_focus.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/ad_small_01.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/ad_small_02.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/ad_small_03.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/banner_01.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/banner_02.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/cantuan.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/email.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/fl_01.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/fl_ad_01.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/fl_ad_02.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/fl_dl_01.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/fl_dl_02.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/fl_dl_03.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/fl_dl_04.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/fl_dl_05.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/fl_dl_06.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/fl_dl_07.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/index_iconlist_01.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/link_arraw.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/rBEQWVFQLqgIAAAAAAAFbgvhBqMAAC0MAP_3cIAAAWG414.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/rBEbRlN5zCsIAAAAAAALfFfJRv8AACGGgO__3sAAAuU660.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/rBEhUlHmCN0IAAAAAAASpGQ8IDYAABK2AP_yHEAABK8207.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/reading.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/share_01.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/share_02.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/show_01.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/show_02.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/show_03.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/show_04.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/show_05.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/show_06.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/show_07.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/show_08.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/tab_arraw.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/virtuals-20140606.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/index/virtuals_arraw.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/input.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/input01.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/jd.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/jt.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/jt_down.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/jt_up.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/jtr.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/jwy_03.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/jy.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/kx.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/logo-201305.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/nav_bg.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/phone.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/ps02.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/search.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/sh04.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/star.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/tab.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/ts05.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/vip.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/youjiantou.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/Images/zf03.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/jd_index.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/jd/笔记.txt" afterPath="" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -11,6 +109,123 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="学习2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jd/学习2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="闭包.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS基础/javascript/复习/闭包.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-351">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="正则.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS基础/javascript/复习/正则.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="原型与继承.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS基础/javascript/复习/原型与继承.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3402">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="匿名函数.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS基础/javascript/复习/匿名函数.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="while.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS基础/javascript/复习/while.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="function重载.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS基础/javascript/复习/function重载.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="function作用域.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS基础/javascript/复习/function作用域.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="array复习.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS基础/javascript/复习/array复习.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="array.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JS基础/javascript/复习/array.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/jd/笔记.txt" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -25,10 +240,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="191" />
-    <option name="y" value="116" />
-    <option name="width" value="1537" />
-    <option name="height" value="880" />
+    <option name="x" value="76" />
+    <option name="y" value="32" />
+    <option name="width" value="1768" />
+    <option name="height" value="970" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -45,9 +260,19 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="JS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JS" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -73,30 +298,34 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="db679fc3-18c7-49f5-80f6-80447c69e115" name="Default" comment="" />
-      <created>1547801181196</created>
+      <changelist id="343ac8e9-4ebd-456f-b72d-8947450e8b9d" name="Default" comment="" />
+      <created>1573188765015</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1547801181196</updated>
-      <workItem from="1547801182850" duration="15000" />
+      <updated>1573188765015</updated>
+      <workItem from="1573188766322" duration="199000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15000" />
+    <option name="totallyTimeSpent" value="199000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="191" y="116" width="1537" height="880" extended-state="0" />
+    <frame x="76" y="32" width="1768" height="970" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24949966" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24971098" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -108,8 +337,133 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/jd/内联元素设置成块.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jd/学习1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jd/笔记.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jd/jd_index.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jd/Images/cate_banner_01.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jd/学习2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS基础/javascript/复习/闭包.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-351">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS基础/javascript/复习/正则.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS基础/javascript/复习/原型与继承.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3402">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS基础/javascript/复习/匿名函数.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS基础/javascript/复习/while.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS基础/javascript/复习/function重载.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS基础/javascript/复习/function作用域.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS基础/javascript/复习/array复习.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS基础/javascript/复习/array.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
