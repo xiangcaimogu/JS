@@ -1,0 +1,13 @@
+{
+    "version": "0.1.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "file": "${file}",
+            "name": "使用本机 Chrome 调试",
+            "runtimeExecutable": "D:\\Google\\Chrome\\Application\\chrome.exe",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}

@@ -1,32 +1,35 @@
 <!doctype html>
 <html>
-	<head>
-		<title>标题</title>
-		<meta charset="utf-8">
-		<script>
-			var pid="130102198312262151";
-			       //012345678901234567
-			var gender=
-				pid[pid.length-2]%2==1?
-											"男":"女";
-			console.log(gender);
-			var age=2016-pid.slice(6,10);
-			console.log(age);
 
-			var n=123.456;
-			console.log(
-				n.toFixed(2)
-				//new Number(n).toFixed(2)
-			);
-			
-			console.log(
-				"张".charCodeAt()
-				//new String("张").charCodeAt()
-			);
+<head>
+	<title>标题</title>
+	<meta charset="utf-8">
+	<script>
+		var pid = "130102198312262151";
+		//012345678901234567
+		var gender =
+			pid[pid.length - 2] % 2 == 1 ?
+				"男" : "女";
+		console.log(gender);
+		var age = 2016 - pid.slice(6, 10);
+		console.log(age);
 
-		</script>
-	</head>
-	<body>
-		
-	</body>
+		var n = 123.456;
+		console.log(
+			n.toFixed(2)
+			//new Number(n).toFixed(2)
+		);
+
+		console.log(
+			"张".charCodeAt()
+			//new String("张").charCodeAt()
+		);
+
+	</script>
+</head>
+
+<body>
+
+</body>
+
 </html>
